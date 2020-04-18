@@ -22,4 +22,9 @@ public class Todo {
     public String getTitle() {
         return title;
     }
+
+    @Override
+    public String toString() {
+        return "id=" + id +" "+ "title=" + title;
+    }
 }
