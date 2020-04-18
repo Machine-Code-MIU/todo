@@ -2,9 +2,11 @@ package com.machinecode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     private final List<Todo> todoList;
+    Scanner scanner = new Scanner(System.in);
 
     private Main() {
         todoList = new ArrayList<>();
@@ -34,7 +36,7 @@ public class Main {
      * @return an integer corresponding to the option user entered
      */
     private int getOption() {
-        return -1;
+        return scanner.nextInt();
     }
 
     /**
